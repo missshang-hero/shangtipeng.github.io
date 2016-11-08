@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+	<script type="text/javascript">
+		var eventUtil={
+      addHandler:function(elenemt,type,handler){    //添加监听事件
+        if(elenemt.addEventListener){
+           elenemt.addEventListener(type,handler,false);
+        }else if(elenemt.attachEvent){
+           element.attachEvent('on'+type,handler);
+        }else{
+           element['on'+type]=handler;
+        }
+      },
+      removeHandler:function(element,typt,handler){   //删除监听事件
+         if(element.removeEventListener){
+            element.removeEventListener(type,handler,false);
+         }else if(element.datechEvent){
+            element.datechEvent('on'+type,handler);
+         }else{
+          element['on'+type]=null;
+         }
+      },
+      getEvent:function(event){   //事件针对ie8以下的兼容
+        return event?event:window.event;
+      },
+      getType:function(event){   //获取事件类型
+        return event.type;
+      },
+      getElement:function(event){   //事件目标
+        return event.target || event.srcElement;
+      },
+      preventDefault:function(event){          //兼容IE8和其他浏览器阻止事件的默认行为
+        if(event.preventDefault){
+          event.preventDefault();
+        }else{
+          event.returnValue=false;
+        }
+      },
+     stopPropagation:function(event){           //兼容IE和其他浏览器阻止事件冒泡
+       if(event.stopPropagation){
+         event.stopPropagation();
+       }else{
+         event.cancelBubble=true;
+       }
+     }
+  }
+	</script>
+</html>
