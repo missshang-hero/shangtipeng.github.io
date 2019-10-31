@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 25 10:39:58 CST 2017
+server-transport-0.0.1-SNAPSHOT.jar>=
+server-transport-0.0.1-SNAPSHOT.pom>=
+server-transport-0.0.1-SNAPSHOT-sources.jar>=

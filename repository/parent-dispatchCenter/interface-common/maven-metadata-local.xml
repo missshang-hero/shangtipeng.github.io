@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>parent-dispatchCenter</groupId>
+  <artifactId>interface-common</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20171225024004</lastUpdated>
+  </versioning>
+</metadata>

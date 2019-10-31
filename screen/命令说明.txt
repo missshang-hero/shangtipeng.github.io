@@ -1,0 +1,2 @@
+Æô¶¯£º npm start
+´ò°ü£º npm run build

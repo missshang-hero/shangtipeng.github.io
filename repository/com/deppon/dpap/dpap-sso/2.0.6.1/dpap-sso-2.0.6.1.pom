@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>dpap</artifactId>
+		<groupId>com.deppon.dpap</groupId>
+		<version>2.0.6.1</version>
+	</parent>
+
+	<artifactId>dpap-sso</artifactId>
+	<packaging>jar</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<dpap-version>${project.parent.version}</dpap-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- jedis for cache -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- jedis end -->
+
+		<!-- inner jar begin -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-core</artifactId>
+			<version>${dpap-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-cache</artifactId>
+			<version>${dpap-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-config</artifactId>
+			<version>${dpap-version}</version><!-- 以公司私服最新版本为准 -->
+		</dependency>
+		<!-- inner jar end -->
+
+		<!-- test jar begin -->
+		<dependency>
+			<groupId>mockobjects</groupId>
+			<artifactId>mockobjects-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymockclassextension</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle-jdbc</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- test jar begin -->
+	</dependencies>
+
+</project>

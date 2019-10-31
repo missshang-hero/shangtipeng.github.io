@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="width: 100%;height:100%">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>德邦跨境</title>
+  <script src="./static/threejs/three.js"></script>
+  <script src="./static/threejs/Projector.js"></script>
+  <script src="./static/threejs/SoftwareRenderer.js"></script>
+  <script src="./static/threejs/stats.min.js"></script>
+  <script src="./static/threejs/dat.gui.min.js"></script>
+  <script src="./static/threejs/AsciiEffect.js"></script>
+  <script src="./static/threejs/Lensflare.js"></script>
+  <script src="./static/threejs/OBJLoader.js"></script>
+  <script src="./static/threejs/tween.min.js"></script>
+  <script src="./static/threejs/OrbitControls.js"></script>
+  <script src="./static/threejs/Detector.js"></script>
+
+  </head>
+  <body style="width: 100%;height:100%">
+    <div style="width: 100%;height:100%;overflow: hidden" id="app"></div>
+  </body>
+<script>
+  /*屏幕自适应*/
+  (function(doc, win) {
+    var uiWidth = 1920;
+    var selfWidth = 100;
+    var docEl = doc.documentElement;
+    var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    var recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      if (clientWidth >= uiWidth){
+        docEl.style.fontSize = selfWidth + 'px';
+      } else {
+        docEl.style.fontSize = selfWidth * (clientWidth / uiWidth) + 'px';
+      }
+    };
+
+    if (!doc.addEventListener) {
+      return
+    };
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoader',recalc,false);
+  })(document, window);
+</script>
+
+</html>

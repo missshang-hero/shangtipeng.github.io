@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>dpap</artifactId>
+        <groupId>com.deppon.dpap</groupId>
+        <version>2.0.6.1</version>
+    </parent>
+ 
+  <artifactId>dpap-framework-springmvc</artifactId>
+  <packaging>jar</packaging>
+
+  
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <dpap-version>${project.parent.version}</dpap-version>
+  </properties>
+  
+   <dependencies>
+   <!-- jstl begin-->
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jsp-api</artifactId>
+		<scope>provided</scope>
+	</dependency>
+	<!-- jstl end-->
+	
+   		<!-- inner jar begin -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-core</artifactId>
+			<version>${dpap-version}</version>
+		</dependency>
+		<!-- inner jar end -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-config</artifactId>
+			<version>${dpap-version}</version><!-- 以公司私服最新版本为准 -->
+		</dependency>
+		<!-- jackson -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+		</dependency>
+		<!-- jackson end -->
+		<!-- 
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+	    </dependency>
+	     -->
+		<!-- junit lib begin -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- junit lib end -->
+   </dependencies>
+</project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>dispatchCenter-interface</artifactId>
+        <groupId>parent-dispatchCenter</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>interface-vts</artifactId>
+	<packaging>jar</packaging>
+
+	<name>interface-vts</name>
+    
+	<dependencies>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>server-order</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>server-transport</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<!-- servlet jar begin -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- servlet jar end -->
+		<!-- junit jar begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- junit jar end -->
+		<!-- ORACLE驱动包 注意：在上测试和生产的时候，scope要改为test -->
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle-jdbc</artifactId>
+			<version>10.1.0.2.0</version>
+			<scope>test</scope>
+		</dependency>	
+	</dependencies>
+</project>

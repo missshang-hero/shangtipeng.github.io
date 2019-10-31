@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>title</title>
+    <style>
+        svg {
+            width: 100px;
+            height: 100px;
+            vertical-align: bottom;
+        }
+
+        .path1 {
+            stroke: #ccc;
+            fill-opacity: 0;
+            stroke-width: 2;
+            /*transform: rotate(90deg);*/
+        }
+        .path_bth {
+            position: relative;
+            fill: none;
+            stroke: rgb(255, 0, 0);
+            stroke-width: 2;
+            stroke-linecap: butt;
+            stroke-linecap: round;
+            stroke-dasharray: 43.98723602294922;
+            stroke-dashoffset: 43.98723602294922;
+            -webkit-animation: dash 8s linear infinite;
+            animation: dash 8s linear infinite;
+            transform: rotate(90deg);
+        }
+        @-webkit-keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<span class="pr animated">
+    <svg viewBox="-8.5 -8.5 17 17">
+    <!--viewBox里的4个数字的意思是：把svg的左上角-8.5，-8.5和右下角17，17区域内的图像放入100，100内，-->
+      <path  class="path1" >
+        </path>
+        <path class="path2 path_bth">
+          </path>
+        <path class="path3 path_bth"></path>
+        <g><text x="0" y="0" dy="0.33em" style="text-anchor: middle; fill: navy; font-size: 7px">%</text></g>
+   </svg>
+</span>
+</body>
+</html>
+<script type="text/javascript">
+
+    var data=0.8
+    //画图
+    var path1 = document.querySelector(".path1")
+    var path2 = document.querySelector(".path2")
+    var path3 = document.querySelector(".path3")
+    var text = document.querySelector("text")
+//    var animate = document.querySelector("animate")
+    function drawPath(data) {
+        var x = 7, y = 0, r = 7, clockwise = 1 ,Anti_clockwise=0;//x,y圆心位置   r圆弧的半径   clockwise顺时针
+        var Percentage = data * 359.9999/2;
+
+        path1.setAttribute('d', drawArcByRadiusDeg(7, 0, 7, 359.99, clockwise));
+        path2.setAttribute('d', drawArcByRadiusDeg(7, 0,r, Percentage, clockwise));
+        path3.setAttribute('d', drawArcByRadiusDeg(7, 0, r, Percentage, Anti_clockwise));
+
+        var num = data * 100;
+        var str = '%';
+        text.innerHTML = num + '<tspan style="font-size:3px;"></tspan>';
+        var tspan = document.querySelector("tspan")
+        tspan.innerHTML = str;
+    }
+    //画圆弧的路径
+    function drawArcByRadiusDeg(startX, startY, r, deg, clockwise) {
+
+
+        var cw = typeof clockwise !== 'undefined' ?  clockwise:1;
+        var x = startX-r+r * Math.cos(deg * Math.PI / 180);
+        var y = startY + (1 === cw ? 1 : -1) * r * Math.sin(deg * Math.PI / 180);
+        var bigOrSmall = deg > 180 ? 1 : 0;
+        return "M" + startX + " " + startY+ " A " + -r + " " + -r + " 0 " + bigOrSmall + " " + cw + " " + x + " " + y
+    }
+    // console.log(drawArcByRadiusDeg());
+
+    //调用
+        setInterval(function (){
+            drawPath(data);
+    // console.log(11);
+
+        },1000)
+
+//路径的长度
+// var path = document.querySelector('path');
+// var length = path.getTotalLength();
+//     console.log(length);
+
+//设置cookie
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+//获取cookie
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    console.log(ca);
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+//清除cookie
+function clearCookie(name) {
+    setCookie(name, "", -1);
+}
+// function checkCookie() {
+//     var user = getCookie("username");
+//     if (user != "") {
+//         alert("Welcome again " + user);
+//     } else {
+//         user = prompt("Please enter your name:", "");
+//         if (user != "" && user != null) {
+//             setCookie("username", user, 365);
+//         }
+//     }
+// }
+// checkCookie();
+console.log(document.cookie);
+
+</script>

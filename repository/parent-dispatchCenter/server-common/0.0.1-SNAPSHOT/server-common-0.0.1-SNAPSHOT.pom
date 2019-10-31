@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>parent-dispatchCenter</artifactId>
+        <groupId>parent-dispatchCenter</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>server-common</artifactId>
+	<packaging>jar</packaging>
+	<name>server-common</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 标记为true，则将js等文件进行压缩，正式发布应用改为true；标记为false，则不进行压缩，方便调试 -->
+        <wro4j-minimize>false</wro4j-minimize>
+        <systemContext>dpap</systemContext>
+        <moduleContext>common</moduleContext>
+    </properties>
+    
+	<dependencies>
+	
+	<!-- DPAP libs start -->
+	    <!-- common层基础包 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-base</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!-- 人员组织 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-authorization</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!-- 数据字典 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-dict</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!-- 登录组件 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-login</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!-- 短消息组件 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-message</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!-- 定时任务组件 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-monitor</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!--统一配置管理 -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-config</artifactId>
+		</dependency>
+		<!-- DPAP libs end -->
+		<!-- common层基础包 -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-core</artifactId>
+		</dependency>
+		<!-- poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<!-- poi -->
+		<!-- xstream -->
+		<!-- https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream -->
+		<dependency>
+		    <groupId>com.thoughtworks.xstream</groupId>
+		    <artifactId>xstream</artifactId>
+		    <version>1.4.10</version>
+		</dependency>
+		<!-- servlet jar begin -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- servlet jar end -->
+		
+		<!-- junit jar begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- ORACLE驱动包 注意：在上测试和生产的时候，scope要改为test -->
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle-jdbc</artifactId>
+			<version>10.1.0.2.0</version>
+			<scope>test</scope>
+		</dependency>	
+		<!-- junit jar end -->
+		<dependency>
+		    <groupId>redis.clients</groupId>
+		    <artifactId>jedis</artifactId>
+		</dependency>
+		<!-- 加密解密jar包 -->
+		<dependency>
+		  <groupId>com.esafenet.dll</groupId>
+		  <artifactId>dlp-decrypt</artifactId>
+		  <version>0.0.1</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>ro.isdc.wro4j</groupId>
+				<artifactId>wro4j-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

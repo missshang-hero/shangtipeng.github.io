@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>dpap</artifactId>
+        <groupId>com.deppon.dpap</groupId>
+        <version>2.0.6.1</version>
+    </parent>
+ 
+  <artifactId>dpap-cache</artifactId>
+  <packaging>jar</packaging>
+  <properties>
+   		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<dpap-version>${project.parent.version}</dpap-version>
+  </properties>
+  
+  <dependencies>
+		<!-- jedis lib begin -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.wandoulabs.jodis</groupId>
+			<artifactId>jodis</artifactId>
+		</dependency> 
+		<!-- jedis lib end -->
+		
+		<!-- inner jar begin -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-core</artifactId>
+			<version>${dpap-version}</version>
+		</dependency>
+		<!-- inner jar end -->
+		
+		<!-- junit jar begin -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- junit jar end -->
+  </dependencies>
+  
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <groupId>parent-dispatchCenter</groupId>
+        <artifactId>dispatchCenter-job</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	<artifactId>dispatchCenter-job-job</artifactId>
+	<packaging>jar</packaging>
+	<name>dispatchCenter-job-job</name>
+	<dependencies>
+		<!-- 定时任务组件 -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-base</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!--添加模块依赖  -->
+	    <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-crm</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	    <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-cubc</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	    <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-cps</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	    <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-oms</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	    <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-dop</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	    <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-vts</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>report-movedoc</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	</dependencies>
+</project>

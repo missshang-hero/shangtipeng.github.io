@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.deppon.dpap</groupId>
+		<artifactId>dpap</artifactId>
+		<version>2.0.6.1</version>
+	</parent>
+
+	<artifactId>dpap-esb-extends</artifactId>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-base</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-data</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-core</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- IBM MQ begin -->
+		<dependency>
+		  <groupId>com.ibm.mq</groupId>
+		  <artifactId>dhbcore</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.mq.fta</groupId>
+		  <artifactId>com.ibm.mq.fta</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.mq</groupId>
+		  <artifactId>mq</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm</groupId>
+		  <artifactId>mqetclient</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.mq.jms.Nojndi</groupId>
+		  <artifactId>com.ibm.mq.jms.Nojndi</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.mq</groupId>
+		  <artifactId>mqjms</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.mq.soap</groupId>
+		  <artifactId>com.ibm.mq.soap</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.ibm.mq</groupId>
+		  <artifactId>jmqi</artifactId>
+		  <scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.mq</groupId>
+			<artifactId>jms</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- IBM MQ end -->
+		
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>

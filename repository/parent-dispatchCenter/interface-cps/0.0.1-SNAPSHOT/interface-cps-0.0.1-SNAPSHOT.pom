@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>dispatchCenter-interface</artifactId>
+        <groupId>parent-dispatchCenter</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	<artifactId>interface-cps</artifactId>
+	<packaging>jar</packaging>
+	<name>interface-cps</name>
+	<dependencies>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>interface-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>server-order</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>report-inventory</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-springmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-esb-extends</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+		<!-- servlet jar begin -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- servlet jar end -->
+		<!-- junit jar begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- junit jar end -->
+	</dependencies>
+	
+</project>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>dispatchCenter-common</artifactId>
+        <groupId>parent-dispatchCenter</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>dpap-common-base</artifactId>
+	<packaging>jar</packaging>
+
+	<name>dpap-common-base</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+	<dependencies>
+  		<!-- inner jar begin -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-struts</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-framework-data</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-cache</artifactId>
+		</dependency>
+		
+		<!-- 单点登录 -->
+		<dependency>
+			<groupId>com.deppon.dpap</groupId>
+			<artifactId>dpap-sso</artifactId>
+		</dependency>
+		
+		<!-- inner jar end -->
+  		
+  		<!-- servlet jar begin -->
+  		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- servlet jar end -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+		<!-- Excel -->
+		<dependency>
+  			<groupId>org.apache.poi</groupId>
+  			<artifactId>poi-ooxml</artifactId>
+  			<version>3.8</version>
+		</dependency>
+		<dependency>
+  			<groupId>org.apache.poi</groupId>
+  			<artifactId>poi-ooxml-schemas</artifactId>
+  			<version>3.8</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+  			<artifactId>poi</artifactId>
+  			<version>3.8</version>
+		</dependency>
+		<!-- Excel -->
+  </dependencies>
+
+</project>

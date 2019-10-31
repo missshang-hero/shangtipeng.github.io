@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>dpap</artifactId>
+        <groupId>com.deppon.dpap</groupId>
+        <version>2.0.6.1</version>
+    </parent>
+ 
+  <artifactId>dpap-quartz</artifactId>
+  <packaging>jar</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <dpap-version>${project.parent.version}</dpap-version>
+  </properties>
+  
+  <dependencies>
+	 
+	   <dependency>
+	  	<groupId>com.deppon.dpap</groupId>
+		<artifactId>dpap-framework-core</artifactId>
+		<version>${dpap-version}</version>
+	  </dependency>
+		
+	   <dependency>
+	  	<groupId>com.deppon.dpap</groupId>
+		<artifactId>dpap-framework-data</artifactId>
+		<version>${dpap-version}</version>
+	  </dependency>
+	  	
+		<!-- quarz begin -->
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>transaction-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>jta</artifactId>
+					<groupId>javax.transaction</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz-oracle</artifactId>
+		</dependency>
+		<!--quarz end -->
+		
+		<!-- oracle 数据库驱动 begin -->
+		<dependency>
+		    <groupId>oracle</groupId>
+			<artifactId>oracle-jdbc</artifactId>
+			<version>10.1.0.2.0</version>
+		</dependency>
+		<!-- oracle 数据库驱动 end -->
+		
+		
+		<!-- test begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- test end -->
+		
+  </dependencies>
+  
+</project>

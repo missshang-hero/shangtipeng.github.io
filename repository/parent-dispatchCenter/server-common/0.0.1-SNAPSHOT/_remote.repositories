@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 25 10:39:53 CST 2017
+server-common-0.0.1-SNAPSHOT.jar>=
+server-common-0.0.1-SNAPSHOT-sources.jar>=
+server-common-0.0.1-SNAPSHOT.pom>=

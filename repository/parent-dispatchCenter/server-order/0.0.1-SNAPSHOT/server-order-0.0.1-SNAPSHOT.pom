@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>parent-dispatchCenter</artifactId>
+        <groupId>parent-dispatchCenter</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>server-order</artifactId>
+	<packaging>jar</packaging>
+	<name>server-order</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 标记为true，则将js等文件进行压缩，正式发布应用改为true；标记为false，则不进行压缩，方便调试 -->
+        <wro4j-minimize>false</wro4j-minimize>
+        <systemContext>dpap</systemContext>
+        <moduleContext>order</moduleContext>
+    </properties>
+    
+	<dependencies>
+	     <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>server-common</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+	     <dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>server-carrier</artifactId>
+			<version>${project.parent.version}</version>
+		 </dependency>
+		<!-- servlet jar begin -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		</dependency>
+		<!-- servlet jar end -->
+		
+		<!-- junit jar begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- junit jar end -->
+		<!-- ORACLE驱动包 注意：在上测试和生产的时候，scope要改为test -->
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle-jdbc</artifactId>
+			<version>10.1.0.2.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>ro.isdc.wro4j</groupId>
+				<artifactId>wro4j-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

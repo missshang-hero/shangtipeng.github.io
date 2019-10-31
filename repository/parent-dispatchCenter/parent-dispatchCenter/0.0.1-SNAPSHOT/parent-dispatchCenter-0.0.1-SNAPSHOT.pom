@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>parent-dispatchCenter</groupId>
+	<artifactId>parent-dispatchCenter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties> 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version>1.6</java-version>
+		<java-encoding>UTF-8</java-encoding>
+		<dpap-version>2.0.6.1</dpap-version>
+		<wro4j-version>1.6.3</wro4j-version>
+		<!-- 标记为true，则将js等文件进行压缩，正式发布应用改为true；标记为false，则不进行压缩，方便调试 -->
+		<wro4j-minimize>true</wro4j-minimize>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- DPAP 基础framework，必须导入start -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-framework-base</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-framework-core</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-framework-data</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-framework-struts</artifactId>
+				<version>2.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-framework-springmvc</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- DPAP framework end -->
+
+			<!-- DPAP 应用common ,不需要可直接注释掉start -->
+			<!--统一配置管理 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-config</artifactId>
+				<version>2.1.2</version>
+			</dependency>
+			<!-- DPAP 应用common end -->
+
+			<!-- DPAP 工具不需要可删掉start -->
+			<!-- 缓存 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-cache</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- 文件操作 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-file</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- 日志 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-log</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- 定时任务 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-quartz</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- 单点登录 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-sso</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- 常用工具 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-utils</artifactId>
+				<version>${dpap-version}</version>
+			</dependency>
+			<!-- ESB异步组件 -->
+			<dependency>
+				<groupId>com.deppon.dpap</groupId>
+				<artifactId>dpap-esb-extends</artifactId>
+				<version>2.1.0</version>
+			</dependency>
+			<!-- DPAP 工具end -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>2.5</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jsp-api</artifactId>
+				<version>2.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+			    <groupId>javax.servlet</groupId>
+			    <artifactId>jstl</artifactId>
+			    <version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.8.2</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>4.3.0.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>3.1.4.RELEASE</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.struts</groupId>
+			    <artifactId>struts2-core</artifactId>
+			    <version>2.3.32</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-convention-plugin -->
+			<dependency>
+			    <groupId>org.apache.struts</groupId>
+			    <artifactId>struts2-convention-plugin</artifactId>
+			    <version>2.3.32</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-json-plugin -->
+			<dependency>
+			    <groupId>org.apache.struts</groupId>
+			    <artifactId>struts2-json-plugin</artifactId>
+			    <version>2.3.32</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.struts.xwork/xwork-core -->
+			<dependency>
+			    <groupId>org.apache.struts.xwork</groupId>
+			    <artifactId>xwork-core</artifactId>
+			    <version>2.3.32</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+			<dependency>
+			    <groupId>redis.clients</groupId>
+			    <artifactId>jedis</artifactId>
+			    <version>2.9.0</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>deppon release repository</name>
+			<url>http://maven.dpap.deppon.com:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>deppon snapshot repository</name>
+			<url>http://maven.dpap.deppon.com:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat6-maven-plugin</artifactId>
+					<version>2.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+					<version>2.6</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>ro.isdc.wro4j</groupId>
+										<artifactId>wro4j-maven-plugin</artifactId>
+										<versionRange>[1.6.0,)</versionRange>
+										<goals>
+											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute/>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>ro.isdc.wro4j</groupId>
+					<artifactId>wro4j-maven-plugin</artifactId>
+					<version>${wro4j-version}</version>
+					<executions>
+						<execution>
+							<phase>process-resources</phase>
+							<goals>
+								<goal>run</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<minimize>${wro4j-minimize}</minimize>
+						<extraConfigFile>${basedir}/src/main/resources/com/deppon/${systemContext}/module/${moduleContext}/server/META-INF/wro.properties</extraConfigFile>
+						<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+						<cssDestinationFolder>${project.build.directory}/classes/com/deppon/${systemContext}/module/${moduleContext}/server/META-INF/styles/wro/</cssDestinationFolder>
+						<jsDestinationFolder>${project.build.directory}/classes/com/deppon/${systemContext}/module/${moduleContext}/server/META-INF/scripts/wro/</jsDestinationFolder>
+						<wroFile>${basedir}/src/main/resources/com/deppon/${systemContext}/module/${moduleContext}/server/META-INF/wro.xml</wroFile>
+						<groupNameMappingFile>${project.build.directory}/classes/com/deppon/${systemContext}/module/${moduleContext}/server/META-INF/wromapping.properties</groupNameMappingFile>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<attach>true</attach>
+					<encoding>UTF-8</encoding>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<encoding>${java-encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+  <modules>
+    <module>parent-dispatchCenter-config</module>
+    <module>parent-dispatchCenter-web</module>
+    <module>dispatchCenter-interface</module>
+    <module>dispatchCenter-job</module>
+    <module>dispatchCenter-static</module>
+    <module>server-common</module>
+    <module>server-order</module>
+    <module>server-carrier</module>
+    <module>server-transport</module>
+    <module>dispatchCenter-common</module>
+    <module>wms-report</module>
+    <module>dpcOpenServer</module>
+  </modules>
+</project>

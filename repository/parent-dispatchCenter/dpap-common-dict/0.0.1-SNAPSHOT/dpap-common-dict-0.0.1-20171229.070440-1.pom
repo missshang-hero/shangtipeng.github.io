@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>dispatchCenter-common</artifactId>
+        <groupId>parent-dispatchCenter</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>dpap-common-dict</artifactId>
+	<packaging>jar</packaging>
+
+	<name>dpap-common-dict</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <wro4j-minimize>true</wro4j-minimize>
+        <systemContext>dpap</systemContext>
+        <moduleContext>dict</moduleContext>
+    </properties>
+    
+	<dependencies>
+		<!-- inner jar begin -->
+		<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>dpap-common-base</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<!-- inner jar end -->
+		
+		<!-- servlet jar begin -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+		<!-- servlet jar end -->
+		
+		<!-- junit jar begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- junit jar end -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>ro.isdc.wro4j</groupId>
+				<artifactId>wro4j-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

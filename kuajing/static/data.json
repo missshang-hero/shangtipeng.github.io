@@ -1,0 +1,1139 @@
+{
+	"data": {
+		"middle": [
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "东南亚",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "韩国",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "美国",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "欧洲",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "其他",
+					"final": "60.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "15.0",
+						"persent": "5.00"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "15.0",
+						"persent": "5.00"
+					},
+					"persent": "6.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "15.0",
+						"persent": "15.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "15.0",
+						"persent": "15.00"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "日本",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "台湾",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": null,
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": null,
+						"persent": "1.67"
+					}
+				}
+			],
+			[{
+					"name": "中国"
+				},
+				{
+					"flag": "1000.0",
+					"name": "香港",
+					"final": "20.0",
+					"obj2": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"obj1": {
+						"flag": "300.0",
+						"final": "5.0",
+						"persent": "1.67"
+					},
+					"persent": "2.00",
+					"obj4": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					},
+					"obj3": {
+						"flag": "100.0",
+						"final": "5.0",
+						"persent": "5.00"
+					}
+				}
+			]
+		],
+		"business":
+			[{
+					"number": "1",
+					"flag": "50.0",
+					"month": "2018-09",
+					"name": "山东",
+					"final": "55.0",
+					"value": "110.00",
+					"title": "山东事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "900.0",
+							"final": "120.0",
+							"persent": "20.00",
+							"cargo": "80"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "2",
+					"flag": "100.0",
+					"month": "2018-09",
+					"name": "广州",
+					"final": "60.0",
+					"value": "60.00",
+					"title": "广州事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "3",
+					"flag": "50.0",
+					"month": "2018-09",
+					"name": "东北",
+					"final": "30.0",
+					"value": "60.00",
+					"title": "东北事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "4",
+					"flag": "100.0",
+					"month": "2018-09",
+					"name": "江苏",
+					"final": "50.0",
+					"value": "50.00",
+					"title": "江苏事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "5",
+					"flag": "50.0",
+					"month": "2018-09",
+					"name": "湖北",
+					"final": "25.0",
+					"value": "50.00",
+					"title": "湖北事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "6",
+					"flag": "100.0",
+					"month": "2018-09",
+					"name": "福建",
+					"final": "45.0",
+					"value": "45.00",
+					"title": "福建事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "7",
+					"flag": "100.0",
+					"month": "2018-09",
+					"name": "深圳",
+					"final": "40.0",
+					"value": "40.00",
+					"title": "深圳事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "8",
+					"flag": "50.0",
+					"month": "2018-09",
+					"name": "河南",
+					"final": "20.0",
+					"value": "40.00",
+					"title": "河南事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "9",
+					"flag": "100.0",
+					"month": "2018-09",
+					"name": "北京",
+					"final": "35.0",
+					"value": "35.00",
+					"title": "北京事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "10",
+					"flag": "50.0",
+					"month": "2018-09",
+					"name": "西北",
+					"final": "15.0",
+					"value": "30.00",
+					"title": "西北事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "11",
+					"flag": "50.0",
+					"month": "2018-09",
+					"name": "四川",
+					"final": "10.0",
+					"value": "20.00",
+					"title": "四川事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "12",
+					"flag": "0",
+					"month": "2018-09",
+					"name": "浙江",
+					"final": "0",
+					"value": "0",
+					"title": "浙江事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				},
+				{
+					"number": "13",
+					"flag": "0",
+					"month": "2018-09",
+					"name": "上海",
+					"final": "0",
+					"value": "0",
+					"title": "上海事业部产品结构",
+					"list": [{
+							"name": "电商小包",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "60"
+						},
+						{
+							"name": "国际快件",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "29"
+						},
+						{
+							"name": "FBA",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "34"
+						},
+						{
+							"name": "联运",
+							"flag": "1000.0",
+							"final": "120.0",
+							"persent": "12.00",
+							"cargo": "56"
+						}
+					]
+				}
+			],
+		"left": {
+			"impo": {
+				"flag": "600.0",
+				"final": "150.0",
+				"persent": "25.00",
+				"timePersent": "50.33"
+			},
+			"fba": {
+				"flag": "100.0",
+				"final": "20.0",
+				"persent": "20.00"
+			},
+			"inte": {
+				"flag": "300.0",
+				"final": "80.0",
+				"persent": "126.67"
+			},
+			"elec": {
+				"flag": "3000.0",
+				"final": "80.0",
+				"persent": "26.67"
+			},
+			"today": {
+				"hisTodayFinal": "120",
+				"persent": "83.33",
+				"todayFinal": "100"
+			},
+			"present":{
+				"present":
+					[
+						{"name":"7日","final":"7","hisFinal":"7"},
+					{"name":"8日","final":"8","hisFinal":"7"},
+					{"name":"9日","final":"9","hisFinal":"7"},
+					{"name":"10日","final":"10","hisFinal":"7"},
+					{"name":"11日","final":"11","hisFinal":"7"},
+					{"name":"12日","final":"12","hisFinal":"7"},
+					{"name":"13日","final":"13","hisFinal":"7"}
+				],
+				"presentTotal":
+					[{"name":"7日","final":"7","hisFinal":"7"},
+					{"name":"8日","final":"8","hisFinal":"7"},
+					{"name":"9日","final":"9","hisFinal":"7"},
+					{"name":"10日","final":"10","hisFinal":"7"},
+					{"name":"11日","final":"11","hisFinal":"7"},
+					{"name":"12日","final":"12","hisFinal":"7"},
+					{"name":"13日","final":"13","hisFinal":"7"}]
+			},
+			"history":{
+				"history":
+					[{"name":"3月","complete":"1000.0","target":"800.0"},
+					{"name":"4月","complete":"1000.0","target":"800.0"},
+					{"name":"5月","complete":"1000.0","target":"800.0"},
+					{"name":"6月","complete":"1000.0","target":"800.0"},
+					{"name":"7月","complete":"1000.0","target":"800.0"},
+					{"name":"8月","complete":"1000.0","target":"800.0"}],
+				"historyTotal":
+					[{"name":"3月","complete":"1000.0","target":"800.0"},
+					{"name":"4月","complete":"1000.0","target":"800.0"},
+					{"name":"5月","complete":"1000.0","target":"800.0"},
+					{"name":"6月","complete":"1000.0","target":"800.0"},
+					{"name":"7月","complete":"1000.0","target":"800.0"},
+					{"name":"8月","complete":"1000.0","target":"800.0"}]
+			},
+			"excit": {
+				"flag": "120.0",
+				"final": "100.0",
+				"persent": "100.00",
+				"timePersent": "63.33"
+			},
+			"tran": {
+				"flag": "100.0",
+				"final": "20.0",
+				"persent": "20.00"
+			}
+		},
+		"line": [
+			{
+				"flag": "1000.0",
+				"name": "东南亚",
+				"final": "120.0",
+				"persent": "12.00",
+				"title": "东南亚线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "韩国",
+				"final": "100.0",
+				"persent": "10.00",
+				"title": "韩国线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "美国",
+				"final": "90.0",
+				"persent": "9.00",
+				"title": "美国线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "欧洲",
+				"final": "80.0",
+				"persent": "8.00",
+				"title": "欧洲线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "其他",
+				"final": "70.0",
+				"persent": "7.00",
+				"title": "其他线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "日本",
+				"final": "60.0",
+				"persent": "6.00",
+				"title": "日本线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "台湾",
+				"final": "50.0",
+				"persent": "5.00",
+				"title": "台湾线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			},
+			{
+				"flag": "1000.0",
+				"name": "香港",
+				"final": "40.0",
+				"persent": "4.00",
+				"title": "香港线路产品结构",
+				"list": [{
+						"name": "电商小包",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "60"
+					},
+					{
+						"name": "国际快件",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "29"
+					},
+					{
+						"name": "FBA",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "34"
+					},
+					{
+						"name": "联运",
+						"flag": "1000.0",
+						"final": "120.0",
+						"persent": "12.00",
+						"cargo": "56"
+					}
+				]
+			}
+		],
+		"busProportion": [{
+				"name": "电商小包",
+				"flag": "1000.0",
+				"final": "120.0",
+				"persent": "12.00",
+				"cargo": "60"
+			},
+			{
+				"name": "国际快件",
+				"flag": "1000.0",
+				"final": "120.0",
+				"persent": "12.00",
+				"cargo": "29"
+			},
+			{
+				"name": "FBA",
+				"flag": "1000.0",
+				"final": "120.0",
+				"persent": "12.00",
+				"cargo": "34"
+			},
+			{
+				"name": "联运",
+				"flag": "1000.0",
+				"final": "120.0",
+				"persent": "12.00",
+				"cargo": "56"
+			}
+		]
+	},
+	"code": "200",
+	"msg": "请求成功",
+	"timestamp": "1536736906117"
+}

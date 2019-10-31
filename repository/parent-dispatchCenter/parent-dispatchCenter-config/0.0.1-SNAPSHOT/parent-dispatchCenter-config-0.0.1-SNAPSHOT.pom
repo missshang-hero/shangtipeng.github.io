@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>parent-dispatchCenter</groupId>
+		<artifactId>parent-dispatchCenter</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>parent-dispatchCenter-config</artifactId>
+	<packaging>jar</packaging>
+	
+	<name>parent-dispatchCenter-config</name>
+
+	<build>
+	   <resources>
+	     <resource>
+	       <directory>config/${environment}</directory>
+	       <filtering>true</filtering>
+	     </resource>
+	   </resources>
+	</build>
+	<profiles>
+	   <profile>
+	      <id>dev</id>
+	      <properties>
+	         <environment>dev</environment>
+	      </properties>
+	   </profile>
+	  
+	   <profile>
+	      <id>normal</id>
+	      <properties>
+	         <environment>normal</environment>
+	      </properties>
+	   </profile>
+	   
+	   <profile>
+	      <id>sit</id>
+	      <properties>
+	         <environment>sit</environment>
+	      </properties>
+	   </profile>
+	   
+	   <profile>
+	      <id>pre</id>
+	      <properties>
+	         <environment>pre</environment>
+	      </properties>
+	   </profile>
+	  
+	   <profile>
+	      <id>prd</id>
+	      <properties>
+	      	 <environment>prd</environment>
+	      </properties>
+	   </profile>
+	   
+	   <profile>
+	      <id>uat</id>
+	      <properties>
+	      	 <environment>uat</environment>
+	      </properties>
+	   </profile>
+	   
+	   <profile>
+	      <id>pt</id>
+	      <properties>
+	      	 <environment>pt</environment>
+	      </properties>
+	   </profile>
+	   
+	   <profile>
+	      <id>et</id>
+	      <properties>
+	      	 <environment>et</environment>
+	      </properties>
+	   </profile>
+	</profiles>
+	
+</project>
