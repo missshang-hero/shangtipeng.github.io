@@ -271,11 +271,7 @@ login(){
 
 ## License
 
-[MIT](https://github.com/duxianwei520/react/blob/master/LICENSE)
 
 
-## 交流
-想跟其他的使用react的小伙伴们交流的话，
-可以加入我创建的reactQQ群：5159697743~
 
 
